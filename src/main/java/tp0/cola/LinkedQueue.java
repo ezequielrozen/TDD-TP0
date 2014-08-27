@@ -4,35 +4,35 @@ import tp0.listaEnlazada.LinkedList;
 
 public class LinkedQueue implements Queue{
     
-    LinkedList listaInterna;
+    LinkedList innerList;
 
     public LinkedQueue() {
-        this.listaInterna = new LinkedList();
+        this.innerList = new LinkedList();
     }    
     
     @Override
     public boolean isEmpty() {
-        return this.listaInterna.isEmpty();
+        return this.innerList.isEmpty();
     }
 
     @Override
     public int size() {
-        return this.listaInterna.size();
+        return this.innerList.size();
     }
 
     @Override
     public void add(Object item) {
-        this.listaInterna.agregarFinal(item);
+        this.innerList.addToEnd(item);
     }
 
     @Override
     public Object top() {
-        return this.listaInterna.verPrimero();
+        return this.innerList.first();
     }
 
     @Override
     public void remove() {
-        this.listaInterna.eliminarPrimero();
+        this.innerList.removeFirst();
     }
     
 }

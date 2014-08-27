@@ -15,15 +15,15 @@ public class LinkedList {
         return this.inicio.getSize();
     }
 
-    public void agregarFinal(Object item) {
+    public void addToEnd(Object item) {
         this.inicio.addToEnd(null, new ContainerNode(item));
     }
 
-    public Object verPrimero() {
+    public Object first() {
         return this.inicio.getValue();
     }
 
-    public void eliminarPrimero() {
+    public void removeFirst() {
         this.inicio.setLink(this.inicio.getNext().getNext());
     }
     

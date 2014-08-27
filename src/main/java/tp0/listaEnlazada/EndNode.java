@@ -16,7 +16,7 @@ class EndNode implements Node {
     }
 
     @Override
-    public Node setLink(Node siguiente) {
+    public Node setLink(Node next) {
         throw new AssertionError();
     }
 
